@@ -34,3 +34,14 @@ How to allow traffic from IP blocks?
 
 # Egress
 ![[Pasted image 20251018172426.png]]
+
+![[Pasted image 20251018173759.png]]
+### blocks DNS too
+![[Pasted image 20251018173837.png]]
+
+we add another rule to allow egress to DNS
+![[Pasted image 20251018173956.png]]
+
+## allow outgoing traffic to other pods in any namespace but not outside the cluster
+![[Pasted image 20251018174319.png]]
+
