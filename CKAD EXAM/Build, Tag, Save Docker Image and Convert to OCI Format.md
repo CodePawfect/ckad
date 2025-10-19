@@ -51,8 +51,12 @@ Output:
  => => writing image sha256:abc123...
  => => naming to docker.io/library/my-app:1.0
 ```
-
-### Step 4: Save Docker image as tar file
+ 
+ alternative: build it directly as OCI:
+ ```bash
+ docker buildx build --output type=oci[,parameters] .
+ ```
+### Step 3: Save Docker image as tar file
 
 Save the image to a tar archive:
 
@@ -67,7 +71,7 @@ Output:
 -rw-r--r-- 1 user user 8.5M Oct 18 10:31 my-app-1.0.tar.gz
 ```
 
-### Step 5: Convert to OCI format
+### Step 4: Convert to OCI format
 
 There are several tools to convert Docker images to OCI format. Here are the most common approaches:
 
